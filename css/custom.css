@@ -11,7 +11,7 @@ body {
     margin-bottom: 0;
     padding: 10px;
     border-radius: 0;
-    background-image: url(../img/jumbotron3.jpg);
+    background-image: url(../img/home-office.jpg);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
@@ -50,13 +50,6 @@ body {
   background-color: black;
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%);
-}
-
-footer{
-  background:rgba(0, 0, 0,0.4);
-  width:100%;
-//  height: 50px;
-  font-size: 1.2em;
 }
 
 .social-icons > i{
@@ -112,13 +105,31 @@ footer{
 }
 
 #projects{
-  background:rgba(0, 0, 0,0.6);
-  height: 1000px;
+  background:rgba(214, 174, 96, 0.8);
+  height: 800px;
+}
+
+#projects > div{
+  margin: auto;
+  width:90%;
+  border: 1px solid green;
+}
+
+#projects > div.row > .col {
+  background-color: white;
 }
 
 #aboutme{
-  background:rgba(0, 0, 0,0.6);
-  height: 1000px;
+  background:rgba(255, 214, 132, 0.7);
+  height: 800px;
+}
+
+footer{
+  background:rgba(52, 43, 24,0.8);
+  width:100%;
+//  height: 50px;
+  color: white;
+  font-size: 1.2em;
 }
 
 
