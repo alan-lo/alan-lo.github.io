@@ -39,12 +39,13 @@ body {
 }
 
 .circle{
+  align-self: center;
   border: 3px solid white;
   background-image: url(../img/AlanLo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background-color: black;
   -webkit-filter: grayscale(80%);
@@ -117,7 +118,6 @@ a:hover{
 #project-container{
   display:flex;
   flex-direction: column;
-  //align-items: center;
   justify-content: space-around;
   min-height:800px;
   width:100%;
@@ -129,28 +129,42 @@ a:hover{
   margin-right: 0 !important;
 }
 
-/*#projects > div{
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width:90%;
-  height:90%;
-  border: 5px solid green;
+.project-title{
+  letter-spacing: 10px;
+  font-size: 3.5em;
 }
 
-#projects > div > div{
-  height: 100%;
-
-}*/
-
-.inner-project-container{
-  background-color:white;
-}
 
 #aboutme{
   background:rgba(0, 0, 0, 0.8);
-  height: 800px;
+  min-height: 800px;
+  padding: 20px;
 }
+
+#aboutme-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+//  align-items: center;
+  min-height:800px;
+  width:100%;
+
+  border: 1px solid green;
+}
+
+.skills-container , .bio-container{
+  background-color: white;
+  border-radius: 20px;
+  min-height: 300px;
+}
+
+.bio-container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
 
 footer{
   background:rgba(0, 0, 0, 0.9);
@@ -186,8 +200,8 @@ footer{
   .jumbotron-message{
     font-size: 1.8em;
   }
-  .circle{
+  /*.circle{
     width: 350px;
     height: 350px;
-  }
+  }*/
 }
