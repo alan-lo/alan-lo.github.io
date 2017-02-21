@@ -98,6 +98,10 @@ a{
   text-decoration: none;
 }
 
+a:visited{
+  color:grey;
+}
+
 a:hover{
   color: #5fff47 !important;
   text-decoration: none;
@@ -115,6 +119,15 @@ a:hover{
   width:90%;
   height:90%;
   border: 1px solid green;
+}
+
+#projects > div > div{
+  height: 100%;
+
+}
+
+.inner-project-container{
+  background-color:rgba(255, 255, 255, 0.3);
 }
 
 #aboutme{
@@ -135,6 +148,14 @@ footer{
 
 .social-icons a:last-child{
   margin-right: 0;
+}
+
+.title{
+  font-size: 1.9em;
+}
+
+.name{
+  font-size: 1.6em;
 }
 
 @media (min-width: 768px) {
