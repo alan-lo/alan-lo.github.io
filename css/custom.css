@@ -29,7 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  //padding: 10px;
   background:rgba(0, 0, 0,0.6);
   width:100%;
   height:100%;
@@ -48,7 +47,7 @@ body {
   height: 250px;
   border-radius: 50%;
   background-color: black;
-  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
 }
 
@@ -104,16 +103,6 @@ a:hover{
   text-decoration: none;
   transition: all 1.2s;
 }
-/*.show-projects a{
-  color:white;
-  text-decoration: none;
-}
-
-.show-projects a:hover{
-  color: #5fff47 !important;
-  text-decoration: none;
-    transition: all 1.2s;
-}*/
 
 #projects{
   background:rgba(0, 0, 0, 0.9);
@@ -128,10 +117,6 @@ a:hover{
   border: 1px solid green;
 }
 
-#projects > div.row > .col {
-  //background-color: white;
-}
-
 #aboutme{
   background:rgba(0, 0, 0, 0.8);
   height: 800px;
@@ -140,7 +125,6 @@ a:hover{
 footer{
   background:rgba(0, 0, 0, 0.9);
   width:100%;
-//  height: 50px;
   color: white;
   font-size: 1.2em;
 }
