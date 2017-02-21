@@ -179,11 +179,12 @@ a:hover{
 }
 
 .rating{
-
+  display: inline-block;
 }
 .star{
   color: gold;
   font-size:1.3em;
+  margin-right: 5px;
 }
 
 footer{
