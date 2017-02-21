@@ -110,24 +110,41 @@ a:hover{
 
 #projects{
   background:rgba(0, 0, 0, 0.9);
-  height: 800px;
+  min-height: 800px;
+  padding: 20px;
 }
 
-#projects > div{
-  margin: auto ;
-  padding-top: 50px;
+#project-container{
+  display:flex;
+  flex-direction: column;
+  //align-items: center;
+  justify-content: space-around;
+  min-height:800px;
+  width:100%;
+  background-color: white;
+}
+
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/*#projects > div{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
   width:90%;
   height:90%;
-  border: 1px solid green;
+  border: 5px solid green;
 }
 
 #projects > div > div{
   height: 100%;
 
-}
+}*/
 
 .inner-project-container{
-  background-color:rgba(255, 255, 255, 0.3);
+  background-color:white;
 }
 
 #aboutme{
