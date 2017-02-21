@@ -122,6 +122,9 @@ a:hover{
   min-height:800px;
   width:100%;
   background-color: white;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
 }
 
 .row{
@@ -145,26 +148,24 @@ a:hover{
   display:flex;
   flex-direction: column;
   justify-content: center;
-//  align-items: center;
   min-height:800px;
   width:100%;
-
-  border: 1px solid green;
 }
 
 .skills-container , .bio-container{
   background-color: white;
   border-radius: 20px;
   min-height: 300px;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
 }
 
 .bio-container{
   display: flex;
   flex-direction: column;
-
 }
-
-
 
 footer{
   background:rgba(0, 0, 0, 0.9);
@@ -200,8 +201,4 @@ footer{
   .jumbotron-message{
     font-size: 1.8em;
   }
-  /*.circle{
-    width: 350px;
-    height: 350px;
-  }*/
 }
