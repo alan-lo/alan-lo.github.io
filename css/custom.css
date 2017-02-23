@@ -1,5 +1,19 @@
 /* this is a custom css stylesheet*/
 
+@font-face {
+    font-family: playfairdisplay;
+    src: url(../fonts/playfairdisplay/PlayfairDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(../fonts/worksans/WorkSans-Bold.ttf);
+}
+
+.playfairdisplay{
+  font-faily: playfairdisplay;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -144,9 +158,13 @@ a:hover{
   margin-right: 0 !important;
 }
 
-.project-title{
+.project-heading{
   letter-spacing: 10px;
   font-size: 3.5em;
+}
+
+.project-title{
+  font-family: playfairdisplay;
 }
 
 
