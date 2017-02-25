@@ -74,7 +74,6 @@ body {
   margin-right: 0;
 }
 
-
 .pt-3{
   padding-top: 3px;
 }
@@ -155,6 +154,11 @@ a:hover{
   margin-right: 0 !important;
 }
 
+.project{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .project-heading{
   letter-spacing: 10px;
   font-size: 3.5em;
@@ -168,6 +172,10 @@ a:hover{
   font-family: 'Roboto', sans-serif;
   font-size: 0.95em;
   text-align: justify;
+}
+
+.project-footer{
+  text-align: left;
 }
 
 #aboutme{
@@ -242,6 +250,7 @@ footer{
 }
 
 
+
 @media (min-width: 768px) {
   .title-image > div:nth-child(1){
     order:1;
@@ -252,5 +261,12 @@ footer{
 
   .jumbotron-message{
     font-size: 1.8em;
+  }
+}
+
+@media (min-width: 991px){
+  #project-container{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
