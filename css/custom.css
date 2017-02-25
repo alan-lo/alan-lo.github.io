@@ -1,4 +1,5 @@
 /* this is a custom css stylesheet*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto');
 
 @font-face {
     font-family: playfairdisplay;
@@ -10,15 +11,11 @@
     src: url(../fonts/worksans/WorkSans-Bold.ttf);
 }
 
-.playfairdisplay{
-  font-faily: playfairdisplay;
-}
-
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "sans-serifs", "Helvetica"
+    font-family: Oswald, "sans-serifs", "Helvetica"
 }
 
 .jumbotron {
@@ -163,10 +160,15 @@ a:hover{
   font-size: 3.5em;
 }
 
-.project-title{
-  font-family: playfairdisplay;
+.project-name{
+  margin-bottom: 18px;
 }
 
+.project-info, .bio{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95em;
+  text-align: justify;
+}
 
 #aboutme{
   background:rgba(33, 33, 33, 1.0);
@@ -204,7 +206,7 @@ a:hover{
 }
 
 .skill{
-  font-size:0.9em;
+  font-size:1.1em;
 }
 
 .rating{
