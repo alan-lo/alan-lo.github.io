@@ -35,6 +35,14 @@ body {
   font-size: 1.2em;
 }
 
+.title{
+  font-size: 1.9em;
+}
+
+.name{
+  font-size: 1.6em;
+}
+
 .opaquelayer{
   position: relative;
   display: flex;
@@ -48,10 +56,6 @@ body {
   position: absolute;
   width: 100%;
   top:25%;
-}
-
-.border{
-   border:1px solid red;
 }
 
 .circle{
@@ -107,20 +111,26 @@ body {
   order:1;
 }
 
-.show-projects{
+.jumbotron-button{
   position: absolute;
   bottom: 5%;
   width:100%;
-  margin: auto;
   display:flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
-.show-projects > a {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+.down-arrow{
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   border: medium solid grey;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
 }
 
 a:link{
@@ -137,6 +147,17 @@ a:hover{
   text-decoration: none;
   transition: all 1.2s;
 }
+
+.jumbotron-button a:hover{
+  color: #5fff47 !important;
+  text-decoration: none;
+  transition: all 1.2s;
+}
+.down-arrow:hover{
+  border: medium solid #5fff47;
+  transition: all 1.2s;
+}
+
 
 #projects{
   background:rgba(0, 0, 0, 0.9);
@@ -243,6 +264,7 @@ footer{
 }
 
 .social-icons{
+  font-size: 0.75em;
   display: flex;
   justify-content: center;
 }
@@ -255,13 +277,6 @@ footer{
   margin-right: 0;
 }
 
-.title{
-  font-size: 1.9em;
-}
-
-.name{
-  font-size: 1.6em;
-}
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -293,7 +308,6 @@ footer{
   left: 0;
   right: 0;
 }
-
 
 .copy-right{
   display: flex;

@@ -11,6 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/custom.css">
+  <script src="./js/smooth-scroll.min.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,8 @@
         <div class="offset-sm-1 col-sm-10">
           <div class="row title-image">
             <div class="col-sm-12 offset-md-1 col-md-11 jumbotron-message">
-              <a href="#aboutme">About me</a> <br>
-              <a href="#projects">Projects</a> <br>
+              <a data-scroll href="#aboutme">About me</a> <br>
+              <a data-scroll href="#projects">Projects</a> <br>
               <a href="mailto:alanlo288@gmail.com">Contact me</a> <br>
               <div>Hi ,my name is <span class="name">Alan</span>.</div>
               <div>I am a <span class="title">Full Stack Web Developer</span>.</div>
@@ -29,11 +30,14 @@
           </div>
         </div>
       </div>
-      <div class="show-projects">
-        <a href="#projects">
-          <div>
-            <h5>My Projects</h5></div>
-          <i class="fa fa-hand-o-down fa-4x" aria-hidden="true"></i>
+
+      <div class="jumbotron-button">
+        <a data-scroll href="#projects">
+         <div class ="down-arrow">
+          <!-- <a href="#projects"> -->
+              <div>  <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
+          <!-- </a> -->
+         </div>
         </a>
       </div>
     </div>
@@ -306,6 +310,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>smoothScroll.init();</script>
 </body>
 
 </html>
