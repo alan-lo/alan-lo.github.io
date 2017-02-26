@@ -22,7 +22,7 @@ body {
     margin-bottom: 0;
     padding: 10px;
     border-radius: 0;
-    background-image: url(../img/home-office.jpg);
+    background-image: url(../img/jumbotron.jpg);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
@@ -59,8 +59,6 @@ body {
   height: 280px;
   border-radius: 50%;
   background-color: black;
-  /*-webkit-filter: grayscale(80%);
-  filter: grayscale(80%);*/
 }
 
 .mt-50{
