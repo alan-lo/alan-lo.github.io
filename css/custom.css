@@ -231,8 +231,13 @@ a:hover{
 footer{
   background:rgba(0, 0, 0, 0.9);
   width:100%;
-  color: white;
   font-size: 1.2em;
+  color: grey;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons > a{
@@ -282,6 +287,34 @@ footer{
   right: 0;
 }
 
+
+.copy-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.row > div:nth-child(1){
+  order:2;
+}
+footer div.row > div:nth-child(2){
+  order:1;
+}
+
+@media (min-width: 576px){
+  footer div.row > div:nth-child(1){
+    order:1;
+  }
+  footer div.row > div:nth-child(2){
+    order:2;
+  }
+  .copy-right{
+    justify-content: flex-start;
+  }
+  .social-icons{
+    justify-content: flex-end;
+  }
+}
 @media (min-width: 768px) {
   .title-image > div:nth-child(1){
     order:1;
