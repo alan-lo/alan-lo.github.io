@@ -221,11 +221,12 @@ a[href="#projects"]:nth-child(1):hover{
 }
 
 .skills-container , .bio-container{
-  background-color: white;
+  color: white;
   min-height: 300px;
-  -moz-box-shadow:    inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow:         inset 0 0 10px #000000;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 
@@ -247,9 +248,18 @@ a[href="#projects"]:nth-child(1):hover{
 .bio-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   min-height: 650px;
   min-width: 300px;
+}
+
+.bio-heading{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bio-heading , .skills-heading{
+font-size: 2.6em;
+letter-spacing: 3px;
 }
 
 .skills-container{
