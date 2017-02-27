@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    height: 800px;
+    height: 100vh;
 }
 
 .opaquelayer{
@@ -48,11 +48,11 @@ body {
 }
 
 .jumbotron-message{
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .title{
-  font-size: 1.9em;
+  font-size: 1.1em;
 }
 
 .name{
@@ -360,6 +360,12 @@ footer div.row > div:nth-child(2){
     justify-content: flex-end;
   }
 }
+
+@media (min-width: 576px){
+  .title{
+    font-size: 1.5em;
+  }
+}
 @media (min-width: 768px) {
   .title-image > div:nth-child(1){
     order:1;
@@ -367,9 +373,12 @@ footer div.row > div:nth-child(2){
   .title-image > div:nth-child(2){
     order:2;
   }
-
   .jumbotron-message{
     font-size: 1.8em;
+  }
+
+  .title{
+    font-size: 1.6em;
   }
 }
 
@@ -378,4 +387,8 @@ footer div.row > div:nth-child(2){
     padding-left: 100px;
     padding-right: 100px;
   }
+
+    .title{
+      font-size: 1.9em;
+    }
 }
