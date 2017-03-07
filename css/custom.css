@@ -167,7 +167,7 @@ a[href="#projects"]:nth-child(1):hover{
   display:flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height:800px;
+  min-height:100vh;
   width:100%;
   background-color: white;
   -moz-box-shadow:    inset 0 0 10px #000000;
@@ -206,9 +206,14 @@ a[href="#projects"]:nth-child(1):hover{
   text-align: left;
 }
 
+.sticky {
+  position:fixed;
+  top: 0px;
+}
+
 #aboutme{
   background:rgba(33, 33, 33, 1.0);
-  min-height: 800px;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -258,8 +263,16 @@ a[href="#projects"]:nth-child(1):hover{
 }
 
 .bio-heading , .skills-heading{
+font-weight: bold;
 font-size: 2.6em;
 letter-spacing: 3px;
+}
+
+.skills-sub-heading{
+  font-size:1.9em;
+  letter-spacing: 2px;
+  margin: 15px 0;
+  
 }
 
 .skills-container{
@@ -268,7 +281,18 @@ letter-spacing: 3px;
 }
 
 .skill{
-  font-size:1.1em;
+  max-width: 200px;
+  font-size:1.4em;
+  margin: 2px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skill-icon{
+  width:32px;
+  height:32px;
+  margin-right: 20px;
 }
 
 .rating{
