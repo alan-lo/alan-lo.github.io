@@ -144,7 +144,6 @@ a:hover{
 
 a[href="#projects"]:nth-child(1):hover{
   color: grey !important;
-
 }
 
 .down-arrow-hover{
@@ -272,12 +271,26 @@ letter-spacing: 3px;
   font-size:1.9em;
   letter-spacing: 2px;
   margin: 15px 0;
-  
+
 }
 
 .skills-container{
   margin-top: 20px;
   padding: 20px;
+}
+
+div.skills-container > div.row:nth-child(2){
+  /*opacity: 0.4;*/
+}
+
+.highlight{
+  opacity: 0.3;
+  transition: all 0.5s linear;
+}
+
+.highlight:hover{
+  opacity: 1.0;
+  transition: all 0.5s linear;
 }
 
 .skill{
