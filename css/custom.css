@@ -165,7 +165,7 @@ a[href="#projects"]:nth-child(1):hover{
 #project-container{
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   min-height:100vh;
   width:100%;
   background-color: white;
@@ -180,6 +180,8 @@ a[href="#projects"]:nth-child(1):hover{
 }
 
 .project{
+  display: flex;
+  flex-flow: column;
   margin-top: 20px;
   margin-bottom: 20px;
 }
