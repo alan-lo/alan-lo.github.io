@@ -9,7 +9,6 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function () {
-    // console.log($(window).scrollTop());
     if ($(window).scrollTop() > 51) {
       $('#sticky-nav').addClass('navbar-fixed');
     }
@@ -17,5 +16,4 @@ $(document).ready(function(){
       $('#sticky-nav').removeClass('navbar-fixed');
     }
   });
-
 });

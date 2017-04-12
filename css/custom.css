@@ -200,17 +200,13 @@ a[href="#projects"]:nth-child(1):hover{
   top: 0px;
 }
 
-#aboutme{
-  background:rgba(33, 33, 33, 1.0);
-  min-height: 100vh;
-  padding: 20px;
-}
-
 #aboutme-container{
   display:flex;
   flex-direction: column;
   justify-content: center;
+  background:rgba(33, 33, 33, 1.0);
   min-height:800px;
+  padding: 20px;
   width:100%;
 }
 
@@ -423,14 +419,6 @@ footer div.row > div:nth-child(2){
 #sticky-nav row{
   width:100%;
 }
-/*
-#sticky-nav a:link{
-
-  color:white;
-}
-#sticky-nav a:visited{
-  color:white;
-}*/
 
 #sticky-nav a:not(:last-child){
 
