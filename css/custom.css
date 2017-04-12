@@ -36,15 +36,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background:rgba(0, 0, 0,0.6);
   width:100%;
   height:100%;
-}
-
-.opaquelayer > div.row {
-  position: absolute;
-  width: 100%;
-  top:25%;
 }
 
 .jumbotron-message{
@@ -92,13 +87,6 @@ body {
 
 .max-h-35{
   max-height: 35px;
-}
-
-.title-image > div:nth-child(1){
-  order:2;
-}
-.title-image > div:nth-child(2){
-  order:1;
 }
 
 .jumbotron-button{
@@ -419,6 +407,30 @@ footer div.row > div:nth-child(2){
   .title{
     font-size: 1.6em;
   }
+}
+
+#sticky-nav{
+  position: absolute;
+  top:50px;
+  z-index: 55;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background:rgba(0, 0, 0,0.6);
+  width:100%;
+}
+
+#sticky-nav row{
+  width:100%;
+}
+#sticky-nav a:not(:last-child){
+  margin-right: 20px;
+}
+
+.navbar-fixed {
+    top: 0 !important;
+    z-index: 100;
+    position: fixed !important;
 }
 
 @media (min-width: 991px){

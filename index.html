@@ -12,21 +12,21 @@
   <link rel="stylesheet" href="./css/custom.css">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="./js/smooth-scroll.min.js"></script>
+  <script src="./js/stickyfill.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 <body>
+  <div id="sticky-nav">
+    <a data-scroll href="#aboutme">About me</a> <br>
+    <a data-scroll href="#projects">Projects</a> <br>
+    <a href="mailto:alanlo288@gmail.com">Contact me</a> <br>
+  </div>
   <div class="jumbotron">
     <div class="opaquelayer">
       <div class="row">
         <div class="offset-sm-1 col-sm-10">
           <div class="row title-image">
             <div class="col-sm-12 offset-md-1 col-md-11 jumbotron-message">
-              <!-- <div style="height: 129px" id="sticky-nav-container"> -->
-              <!-- <div id="sticky-nav"> -->
-              <a data-scroll href="#aboutme">About me</a> <br>
-              <a data-scroll href="#projects">Projects</a> <br>
-              <a href="mailto:alanlo288@gmail.com">Contact me</a> <br>
-              <!-- </div> -->
-              <!-- </div> -->
               <div>Hi, my name is <span class="name">Alan</span>.</div>
               <div>I am a <span class="title">Full Stack Web Developer</span>.</div>
             </div>
@@ -72,7 +72,8 @@
             <div class="project-name hvr-underline-from-center">PhotoEz</div>
             <p class="project-info">
               A simple solution for organizing photos in albums. Users create photo albums  and upload their favourite images and share between users.
-              Users can login with their google and facebook account and enjoy their photos with ease.
+              Users can login the app with their google and facebook account without signing up a new account. The app is built with node and express and using cloudinary api for uploading images to the cloud server.
+              Signed-in users can also like and dislike a post as well as leaving comments.
             </p>
           </div>
           <div>
@@ -207,6 +208,5 @@
       }
     });
   </script> -->
-  <script src="./js/index.js"></script>
 </body>
 </html>

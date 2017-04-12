@@ -7,4 +7,15 @@ $(document).ready(function(){
         $(this).removeClass('down-arrow-circle-hover')
         $('a[href="#projects"]:nth-child(1) i.fa.fa-angle-down.fa-3x').removeClass('down-arrow-hover')
     });
+
+    $(window).scroll(function () {
+    // console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 51) {
+      $('#sticky-nav').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 51) {
+      $('#sticky-nav').removeClass('navbar-fixed');
+    }
+  });
+
 });
