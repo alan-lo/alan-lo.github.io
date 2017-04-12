@@ -147,7 +147,7 @@ a[href="#projects"]:nth-child(1):hover{
 #projects{
   background:rgba(0, 0, 0, 0.9);
   min-height: 800px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 #project-container{
@@ -423,7 +423,17 @@ footer div.row > div:nth-child(2){
 #sticky-nav row{
   width:100%;
 }
+/*
+#sticky-nav a:link{
+
+  color:white;
+}
+#sticky-nav a:visited{
+  color:white;
+}*/
+
 #sticky-nav a:not(:last-child){
+
   margin-right: 20px;
 }
 
