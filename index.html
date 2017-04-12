@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -13,15 +12,17 @@
   <link rel="stylesheet" href="./css/custom.css">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="./js/smooth-scroll.min.js"></script>
-  <script src="./js/stickyfill.min.js"></script>
   <script src="./js/index.js"></script>
 </head>
-
 <body>
-  <div id="sticky-nav">
-    <a data-scroll href="#aboutme">About me</a> <br>
-    <a data-scroll href="#projects">Projects</a> <br>
-    <a href="mailto:alanlo288@gmail.com">Contact me</a> <br>
+  <div class="row">
+    <div class="col">
+      <div id="sticky-nav">
+        <a data-scroll href="#aboutme">About me</a> <br>
+        <a data-scroll href="#projects">Projects</a> <br>
+        <a href="mailto:alanlo288@gmail.com">Contact me</a> <br>
+      </div>
+    </div>
   </div>
   <div class="jumbotron">
     <div class="opaquelayer">
@@ -193,5 +194,4 @@
     smoothScroll.init();
   </script>
 </body>
-
 </html>
