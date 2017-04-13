@@ -189,7 +189,7 @@ a[href="#projects"]:nth-child(1):hover{
 //Styles for Project page
 #projects{
   background:$footerBackground;
-  min-height: 800px;
+  min-height: 700px;
   padding: 0 20px 20px 20px;
 }
 
@@ -202,6 +202,7 @@ a[href="#projects"]:nth-child(1):hover{
   background-color: $white;
   @include box-shadow(inset,0,0,10, $black);
 }
+
 
 .row{
   margin-left: 0 !important;
@@ -357,43 +358,6 @@ footer{
   margin-right: 0;
 }
 
-
-@media (min-width: 576px){
-  footer div.row > div:nth-child(1){
-    order:1;
-  }
-  footer div.row > div:nth-child(2){
-    order:2;
-  }
-  .copy-right{
-    justify-content: flex-start;
-  }
-  .social-icons{
-    justify-content: flex-end;
-  }
-}
-
-@media (min-width: 576px){
-  .title{
-    @include font-source(1.5em);
-  }
-}
-@media (min-width: 768px) {
-  .title-image > div:nth-child(1){
-    order:1;
-  }
-  .title-image > div:nth-child(2){
-    order:2;
-  }
-  .jumbotron-message{
-    @include font-source(1.8em);
-  }
-
-  .title{
-    @include font-source(1.6em);
-  }
-}
-
 #sticky-nav{
   position: absolute;
   left:0;
@@ -402,6 +366,13 @@ footer{
   @include font-source(1.5rem);
   background: $opaqueColor;
   width:100%;
+  a:nth-child(even){
+    display:none;
+  }
+  i{
+    font-size: 2.2rem;
+    margin-right: 20px;
+  }
 }
 
 #sticky-nav row{
@@ -416,6 +387,47 @@ footer{
   top: 0 !important;
   z-index: 100;
   position: fixed !important;
+}
+
+@media (min-width: 576px){
+  footer div.row > div:nth-child(1){
+    order:1;
+  }
+  footer div.row > div:nth-child(2){
+    order:2;
+  }
+  .copy-right{
+    justify-content: flex-start;
+  }
+  .social-icons{
+    justify-content: flex-end;
+  }
+  .title{
+    @include font-source(1.5em);
+  }
+  #sticky-nav{
+    a:nth-child(odd){
+      display:none !important;
+    }
+    a:nth-child(even){
+      display:block !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .title-image > div:nth-child(1){
+    order:1;
+  }
+  .title-image > div:nth-child(2){
+    order:2;
+  }
+  .jumbotron-message{
+    @include font-source(1.8em);
+  }
+  .title{
+    @include font-source(1.6em);
+  }
 }
 
 @media (min-width: 991px){

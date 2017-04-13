@@ -143,7 +143,7 @@ a[href="#projects"]:nth-child(1):hover {
 
 #projects {
   background: rgba(0, 0, 0, 0.9);
-  min-height: 800px;
+  min-height: 700px;
   padding: 0 20px 20px 20px; }
 
 #project-container {
@@ -308,6 +308,32 @@ footer {
 .social-icons a:last-child {
   margin-right: 0; }
 
+#sticky-nav {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 55;
+  font-family: Oswald, "sans-serifs", "Helvetica";
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%; }
+  #sticky-nav a:nth-child(even) {
+    display: none; }
+  #sticky-nav i {
+    font-size: 2.2rem;
+    margin-right: 20px; }
+
+#sticky-nav row {
+  width: 100%; }
+
+#sticky-nav a:not(:last-child) {
+  margin-right: 20px; }
+
+.navbar-fixed {
+  top: 0 !important;
+  z-index: 100;
+  position: fixed !important; }
+
 @media (min-width: 576px) {
   footer div.row > div:nth-child(1) {
     order: 1; }
@@ -319,11 +345,16 @@ footer {
     justify-content: flex-start; }
 
   .social-icons {
-    justify-content: flex-end; } }
-@media (min-width: 576px) {
+    justify-content: flex-end; }
+
   .title {
     font-family: Oswald, "sans-serifs", "Helvetica";
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  #sticky-nav a:nth-child(odd) {
+    display: none !important; }
+  #sticky-nav a:nth-child(even) {
+    display: block !important; } }
 @media (min-width: 768px) {
   .title-image > div:nth-child(1) {
     order: 1; }
@@ -338,27 +369,6 @@ footer {
   .title {
     font-family: Oswald, "sans-serifs", "Helvetica";
     font-size: 1.6em; } }
-#sticky-nav {
-  position: absolute;
-  left: 0;
-  top: 50px;
-  z-index: 55;
-  font-family: Oswald, "sans-serifs", "Helvetica";
-  font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%; }
-
-#sticky-nav row {
-  width: 100%; }
-
-#sticky-nav a:not(:last-child) {
-  margin-right: 20px; }
-
-.navbar-fixed {
-  top: 0 !important;
-  z-index: 100;
-  position: fixed !important; }
-
 @media (min-width: 991px) {
   #project-container {
     padding: 0 100px; }
