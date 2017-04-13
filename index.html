@@ -9,7 +9,7 @@
   </title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/custom.css">
+  <link rel="stylesheet" href="./css/mystyle.css">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="./js/smooth-scroll.min.js"></script>
   <script src="./js/index.js"></script>
@@ -17,7 +17,7 @@
 <body>
   <div class="row">
     <div class="col">
-      <div id="sticky-nav">
+      <div id="sticky-nav" class=" d-flex justify-content-center">
         <a data-scroll href="#home">Home</a>
         <a data-scroll href="#aboutme">About me</a>
         <a data-scroll href="#projects">Projects</a>
@@ -26,7 +26,7 @@
     </div>
   </div>
   <div id="home" class="jumbotron">
-    <div class="opaquelayer">
+    <div class="opaquelayer d-flex flex-column justify-content-center">
       <div class="row">
         <div class="offset-sm-1 col-sm-10">
           <div class="row title-image">
@@ -49,7 +49,7 @@
   <div id="projects">
     <div id="project-container">
       <div class="row d-flex flex-row">
-        <div class="col-xs-12 pl-15">
+        <div class="col-xs-12 col-md-4">
           <span class="project-heading">What I Do:</span>
         </div>
       </div>
@@ -112,10 +112,10 @@
   </div>
   <div id="aboutme-container">
     <div class="row">
-      <div class="col-xs-12  offset-lg-1 col-lg-3 bio-container">
+      <div class="col-xs-12  offset-lg-1 col-lg-3 profile-container">
         <div class="circle"></div>
-        <h1 id="aboutme" class="bio-heading">About me</h1>
-        <p class="bio">
+        <h1 id="aboutme" class="profile-heading">About me</h1>
+        <p class="profile">
           With a passion of techology and bachelor degree of computer science, Alan spent his after-graduated life living in Surrey, British Columbia. He was working for a non-profit organization for 5 years as a data analyst, and became a key contributor to the
           success and evolutions of the program. Later, he joined <a href="https://codecore.ca/" target="_blank">CodeCore</a> to further pursue his dream.
         </p>
@@ -174,7 +174,7 @@
       </div>
     </div>
   </div>
-  <footer class="row mr-0 ml-0 align-items-center">
+  <footer class="row align-items-center">
     <div class="offset-sm-1 col-sm-10">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6 copy-right">

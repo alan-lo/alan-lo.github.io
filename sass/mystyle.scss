@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto');
+
+@font-face {
+    font-family: playfairdisplay;
+    src: url(../fonts/playfairdisplay/PlayfairDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(../fonts/worksans/WorkSans-Bold.ttf);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin font-source($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: Oswald, "sans-serifs", "Helvetica";
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  transition: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+$grey: grey;
+$white: white;
+$highlightColor: #5fff47;
+$opaqueColor: rgba(0, 0, 0,0.6);
+$footerBackground: rgba(0, 0, 0,0.9);
+$aboutmeBackground: rgba(33, 33, 33, 1.0);
+$black: #000000;
+
+body *{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Oswald, "sans-serifs", "Helvetica";
+}
+
+a{
+  &:link{
+  color:$grey;
+  text-decoration: none;
+  }
+  &:hover{
+    color: $highlightColor !important;
+    text-decoration: none;
+    @include transition(all 1.2s);
+  }
+  &:visited{
+    color:$grey;
+  }
+}
+
+a[href="#projects"]:nth-child(1):hover{
+  color: $grey !important;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 10px;
+    @include border-radius(0);
+    background-image: url(../img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white;
+    height: 100vh;
+}
+
+.opaquelayer{
+  position: relative;
+  background:$opaqueColor;
+  width:100%;
+  height:100%;
+}
+
+.jumbotron-message{
+  @include font-source(1.5em);
+}
+
+.title{
+  @include font-source(1.1em);
+}
+
+.name{
+  @include font-source(1.6em);
+}
+
+.jumbotron-button{
+  position: absolute;
+  bottom: 5%;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow{
+   height: 60px;
+   width: 60px;
+   @include border-radius(50%);
+   border: medium solid $grey;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   @include transition(all 1.2s);
+}
+
+.down-arrow i.fa{
+   @include transition(all 1.2s);
+}
+
+.down-arrow-hover{
+  color: $highlightColor;
+  text-decoration: none;
+  @include transition(all 1.2s);
+}
+.down-arrow-circle-hover{
+  border: medium solid $highlightColor;
+  @include transition(all 0.8s);
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  @include box-shadow(false,0,0,1px, transparent);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: grey;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+//Styles for Project page
+#projects{
+  background:$footerBackground;
+  min-height: 800px;
+  padding: 0 20px 20px 20px;
+}
+
+#project-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:100vh;
+  width:100%;
+  background-color: $white;
+  @include box-shadow(inset,0,0,10, $black);
+}
+
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.project{
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-heading{
+  letter-spacing: 10px;
+  @include font-source(3.5em);
+}
+
+.project-name{
+  @include font-source(2.5em,false,bold,false);
+  margin-bottom: 18px;
+}
+
+.project-info, .profile{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95em;
+  text-align: justify;
+}
+
+.project-footer{
+  text-align: left;
+}
+
+//Styles for About me page
+#aboutme-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background:$aboutmeBackground;
+  min-height:700px;
+  padding: 20px;
+  width:100%;
+}
+
+.skills-container , .profile-container{
+  color: $white;
+  min-height: 300px;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+.circle{
+  align-self: center;
+  border: 3px solid $white;
+  background-image: url(../img/AlanLo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include filter(grayscale, 45%);
+  width: 280px;
+  height: 280px;
+  @include border-radius(50%);
+  @include box-shadow(inset, 0, 0, 10px, $black);
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 650px;
+  min-width: 300px;
+}
+
+.profile-heading{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.profile-heading , .skills-heading{
+@include font-source(2.6em,false,bold, false);
+letter-spacing: 3px;
+}
+
+.skills-sub-heading{
+  @include font-source(1.4em);
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+
+.skills-container{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.highlight{
+  @include opacity(0.3);
+  @include transition(all 0.5s linear)
+}
+
+.highlight:hover{
+  @include opacity(1.0);
+  @include transition(all 0.5s linear)
+}
+
+.skill{
+  max-width: 200px;
+  @include font-source(1.4em);
+  margin: 2px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skill-icon{
+  width:32px;
+  height:32px;
+  margin-right: 20px;
+}
+
+// styles for footer
+footer div.row > div:nth-child(1){
+  order:2;
+}
+footer div.row > div:nth-child(2){
+  order:1;
+}
+
+.copy-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  width:100%;
+  background:$footerBackground;
+  @include font-source(0.9rem);
+  color: $grey;
+}
+
+.social-icons{
+  font-size: 0.75em;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons > a{
+  margin-right: 20px;
+}
+
+.social-icons a:last-child{
+  margin-right: 0;
+}
+
+
+@media (min-width: 576px){
+  footer div.row > div:nth-child(1){
+    order:1;
+  }
+  footer div.row > div:nth-child(2){
+    order:2;
+  }
+  .copy-right{
+    justify-content: flex-start;
+  }
+  .social-icons{
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 576px){
+  .title{
+    @include font-source(1.5em);
+  }
+}
+@media (min-width: 768px) {
+  .title-image > div:nth-child(1){
+    order:1;
+  }
+  .title-image > div:nth-child(2){
+    order:2;
+  }
+  .jumbotron-message{
+    @include font-source(1.8em);
+  }
+
+  .title{
+    @include font-source(1.6em);
+  }
+}
+
+#sticky-nav{
+  position: absolute;
+  left:0;
+  top:50px;
+  z-index: 55;
+  @include font-source(1.5rem);
+  background: $opaqueColor;
+  width:100%;
+}
+
+#sticky-nav row{
+  width:100%;
+}
+
+#sticky-nav a:not(:last-child){
+  margin-right: 20px;
+}
+
+.navbar-fixed {
+  top: 0 !important;
+  z-index: 100;
+  position: fixed !important;
+}
+
+@media (min-width: 991px){
+  #project-container{
+    padding: 0 100px;
+  }
+
+  .title{
+    @include font-source(1.9em);
+  }
+}

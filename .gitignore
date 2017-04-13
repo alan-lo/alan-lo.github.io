@@ -83,6 +83,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Sass
+.sass-cache/
+*.css.map
+
 # Typescript v1 declaration files
 typings/
 
