@@ -218,11 +218,11 @@ a[href="#projects"]:nth-child(1):hover{
 
 .project-heading{
   letter-spacing: 10px;
-  @include font-source(3.5em);
+  @include font-source(2.5em);
 }
 
 .project-name{
-  @include font-source(2.5em,false,bold,false);
+  @include font-source(1.9em,false,bold,false);
   margin-bottom: 18px;
 }
 
@@ -416,6 +416,12 @@ footer{
 }
 
 @media (min-width: 768px) {
+  .project-name{
+    @include font-source(2.5em);
+  }
+  .project-heading{
+    @include font-source(3.5em);
+  }
   .title-image > div:nth-child(1){
     order:1;
   }
